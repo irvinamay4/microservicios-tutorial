@@ -49,13 +49,13 @@ public class UsuarioService {
 	//Inicio del rest template
 	public List<Carro> getCarros(int usuarioId){
 		//Nos conectamos a la api de carro a la que le pasamos ademas el usuario id que recibiremos desde el controller
-		List<Carro> carros = restTemplate.getForObject("http://localhost:8082/carro/usuario/" + usuarioId, List.class);
+		List<Carro> carros = restTemplate.getForObject("http://carro-service/carro/usuario/" + usuarioId, List.class);
 		return carros;
 	}
 	
 	public List<Moto> getMotos(int usuarioId){
 		//Nos conectamos a la api de moto a la que le pasamos ademas el usuario id que recibiremos desde el controller
-		List<Moto> motos = restTemplate.getForObject("http://localhost:8083/moto/usuario/" + usuarioId, List.class);
+		List<Moto> motos = restTemplate.getForObject("http://moto-service/moto/usuario/" + usuarioId, List.class);
 		return motos;
 	}
 	//Fin del rest template
