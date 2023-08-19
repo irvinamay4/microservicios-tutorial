@@ -39,6 +39,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!--https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bootstrap -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-bootstrap</artifactId>
+			</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -48,12 +53,7 @@
 				<version>${spring-cloud.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
-			</dependency>
-			<!--https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bootstrap -->
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-bootstrap</artifactId>
-			</dependency>
+			</dependency>			
 		</dependencies>
 	</dependencyManagement>
 
