@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.usuario.service.modelos.Carro;
 
 //Se llama al microservicio y se agrega el request mapping de acceso
-@FeignClient(name = "carro-service", url = "http://localhost:8082")
+@FeignClient(name = "carro-service")
 @RequestMapping("/carro")
 public interface CarroFeignClient {
 	
